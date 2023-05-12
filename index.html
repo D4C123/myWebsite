@@ -8,18 +8,34 @@
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <button>Home</button>
-           <a href="about.html"> <button>About</button></a>
-            <button>Contact</button>
-            <button>Work</button>
-            <button>Other skills</button>
-        </nav>
-        
-    </header>
-    <heading>Hello</heading>
-    <p>I am a new web developer learning how to build my own websites. This is my first very own website. I am still young and not 100% sure what I want to do in life so for now enjoy some of these images I like and a few of my favorite quotes</p>
-    <img src="img/thorfinn.jpg">
+    <section class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Your email" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "eduandmontoya@gmail.com",
+                Password : "1BC14B2C0754D993B2C04FD6EE437F47E86F",
+                To : 'eduandmontoya@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name" + document.getElementById("name").value
+                    + "<br> Email: " +document.getElementById("email").value
+                    + "<br> Phone no: " +document.getElementById("phone").value
+                    + "<br> Message: " +document.getElementById("message").value
+            }).then(
+            message => alert("Succsesfully Sent Message")
+            );
+        }
+    </script>
 </body>
 </html>
