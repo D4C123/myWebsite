@@ -11,18 +11,41 @@
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Other work</li>
-                <li>Contact</li>
+                <li><a href="#hm">Home</a></li>
+                <li><a href="#ab">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <h2>HELLO</h2>
-    <p id="about">I am a new Web developer and I am </p>
+    <section class="home" id="hm">
+        <img src="img/coding.webp">
+        <h1>Eduand Montoya</h1>
+        <h3>Web developer</h3>
+        
+    </section>
+
+        <section class="about" id="ab">
+            <h2>HELLO</h2>
+            <p class="desc">I am a new Web developer and I am building my skills up in graphic design and Web building. I'm always looking for ways to improve and always open to suggestions. This is just a space for some of my own personal thoughts and more about me.</p>
+        </section>
 
 
-    <section class="container">
+    <section class="blank">
+        <h2>Here are some quotes that I like that I'd thought I'd share.</h2>
+
+        <p class="o">"Yesterday is history, Tommorow is a mystery, but Today is a gift, that's why it's called the present"</p>
+
+
+        <p class="j">"Do not pray for easy lives my friends, pray to be stronger men"</p>
+
+
+        <p class="v">"When preoccupied with a single leaf, you miss the tree. When preoccupied with a single tree, you miss the whole forest"</p>
+
+
+        <p class="t">"Allow yourself to shine without the desire to be seen"</p>
+    </section>
+
+    <section class="container" id="contact">
         <form onsubmit="sendEmail(); reset(); return false;">
             <h3>GET IN TOUCH</h3>
             <input type="text" id="name" placeholder="Your name" required>
