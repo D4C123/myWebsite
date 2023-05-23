@@ -1,15 +1,83 @@
+body{
+    margin:0;
+}
+
 img{
-    width:20%;
-    height:20%;
+    width:50%;
+    padding-top: 50px;
 }
 
 nav{
     text-align: center;
+    background-color:#0e1882;
+}
+
+ul,li{
+    display: inline-block;
+}
+
+li{
+    margin-right: 100px;
+    color: #b30505;
+    font-size: 25px;
+}
+
+h1, h2{
+    font-size:50px;
+    color:#b30505;
+}
+
+h2{
+    height: 185px;
+    padding-top: 80px;
+}
+
+h3{
+    margin: 0;
+    height:100px
+}
+
+p, h3{
+    color:#ff5361;
+    font-size:25px;
+}
+
+
+.home,.about,.blank{
+    text-align: center;
+}
+
+.home{
+    background-color: #001660;
+}
+
+.about{
+    background-color: #03248f;
+    margin: 0;
+    
+}
+
+.blank{
+    background-color: #021d75;
+}
+
+p.desc,h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p.desc{
+    height:175px
+}
+
+p.o,p.j,p.v,p.t{
+    margin-top: 8%;
+    margin-bottom: 0;
 }
 
 .container{
     width:100%;
-    height:100vh;
+    height:75vh;
     background: #001660;
     display: flex;
     align-items: center;
@@ -17,7 +85,7 @@ nav{
 }
 
 form{
-    background: white;
+    background: #001660;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -27,7 +95,7 @@ form{
 }
 
 form h3{
-    color: #555;
+    color: #ff5361;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -37,14 +105,15 @@ form input, form textarea{
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background: #f5f5f5;
+    background: #fdfdff;
     font-size:16px;
+    border-radius: 40px;
 }
 
 form button{
     padding:15px;
     background: #ff5361;
-    color:white;
+    color:#001660;
     font-size:18px;
     border:0;
     outline: none;
